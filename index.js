@@ -67,7 +67,7 @@ async function postFact() {
 
 // AUTO POST
 function randomTime() {
-  return Math.floor(Math.random() * (120 - 30 + 1) + 30) * 60000;
+  return 60000; // 1 minute
 }
 
 function startPosting() {
