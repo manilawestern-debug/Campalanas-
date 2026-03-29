@@ -46,22 +46,20 @@ function getImage() {
 // POST
 async function postFact() {
   const fact = getFactLoop();
-  const image = getImage();
 
   try {
-    const res = await fetch(`https://graph.facebook.com/v18.0/me/photos?access_token=${PAGE_TOKEN}`, {
+    const res = await fetch(`https://graph.facebook.com/v18.0/me/feed?access_token=${PAGE_TOKEN}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        url: image,
-        caption: getCaption(fact)
+        message: getCaption(fact)
       })
     });
 
     const data = await res.json();
-    console.log("Posted:", data);
+    console.log("✅ Posted:", data);
   } catch (err) {
-    console.error(err);
+    console.error("❌ Error:", err);
   }
 }
 
