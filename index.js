@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const app = express();
 
 // 🔑 PALITAN MO ITO
-const PAGE_TOKEN = "PASTE_YOUR_PAGE_TOKEN_HERE";
+const PAGE_TOKEN = "EAAOng2iQznIBRLOvdCk6xiCPfLr1DHjDcBHHoKpAJtZBVvYdWCo5YrUchATaRTh64MAupteLEzT82H2RUabUUI3l9nxTGSmCvG3vf9JFwaJsVYBiDupnpB646Lz9rfj1IisdatQnLVFwsaAZBEEcXSByS83ClS0NwJPB7XupdPHkP6ONkDZAfmDqMGsNq7ZCF6BjWHWIRiEZAj0TDFnKZCx27q2HpRVgd1ZA2ZCXZB4mcaD2yrfj7w2ICea3gyEgeYZCvJ9iZCHRtTNjgm76KHaPFO0h82pIwZDZD";
 
 // 📚 FACTS
 const facts = [
